@@ -1,0 +1,25 @@
+10.	Передача динамического массива в функцию
+
+```cpp
+#include <iostream>
+Using namespace std;
+
+Void print (int *mas, int n)
+{
+    For (int i = 0; i < n; i++)
+        Cout << mas[i] << “\t”;
+}
+
+Int main()
+{
+    Int n = 10;
+    Int *a = new int [n];
+    For (int i = 0; i < n; i++)
+        A[i] = i * i;
+    Print(a, 10);
+    Return 0;
+}
+```
+
+Что делает:
+Создаёт динамический массив, заполняет квадратами индексов и выводит через функцию print.
