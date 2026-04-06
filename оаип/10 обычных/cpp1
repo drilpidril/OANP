@@ -1,0 +1,8 @@
+Float f(float x)
+{
+    If (x < 0) // условие первой ветви
+        Return pow(pow(x, 3) + 1, 2);
+    Else if (x < 1) // условие второй ветви
+        Return 0;
+    Else return fabs(x * x – 5 * x + 1); // по умолчанию третья ветвь
+}
