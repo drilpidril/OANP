@@ -1,0 +1,23 @@
+3.	Вычисление 1/x с повторным вводом при x = 0
+
+```cpp
+#include <iostream>
+Using namespace std;
+Int main()
+{
+    Float x;
+    Metka: cout << “x = “; // метка
+    Cin >> x;
+    If (x)
+        Cout << “y = “ << 1/x << endl;
+    Else
+    {
+        Cout << “функция не определена\n”;
+        Goto metka; // передача управления метке
+    }
+    Return 0;
+}
+```
+
+Что делает:
+Вводит x, выводит 1/x. Если x = 0, сообщает об ошибке и повторяет ввод (используя goto).
