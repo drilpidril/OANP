@@ -1,0 +1,9 @@
+int main()
+{
+    int a, b;
+    cout << "a = "; cin >> a;
+    cout << "b = "; cin >> b;
+    while (a <= b)
+    {
+        cout << a * a++ << "/t";
+        // здесь a увеличится после вычисления a * a
