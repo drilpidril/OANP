@@ -1,0 +1,31 @@
+11.	Функция создания и возврата динамического массива
+
+```cpp
+#include <iostream>
+Using namespace std;
+
+Int * creat(int n)
+{
+    Int *mas = new int [n];
+    For (int i = 0; i < n; i++)
+        Mas[i] = i * i;
+    Return mas;
+}
+
+Void print (int *mas, int n)
+{
+    For (int i = 0; i < n; i++)
+        Cout << mas[i] << “ \t”;
+}
+
+Int main()
+{
+    Int n = 5;
+    Int *a = creat(n);
+    Print(a, n);
+    Return 0;
+}
+```
+
+Что делает:
+Функция creat создаёт динамический массив, заполняет квадратами и возвращает указатель. В main вызывается print для вывода.
