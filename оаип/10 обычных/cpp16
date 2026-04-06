@@ -1,0 +1,25 @@
+16.	Передача статического двумерного массива в функцию (фиксированный второй размер)
+
+```cpp
+#include <iostream>
+Using namespace std;
+
+Void print (int mas[3][2], int n, int m)
+{
+    For (int i = 0; i < n; ++i, cout << endl)
+        For (int j = 0; j < m; ++j)
+            Cout << mas[i][j] << “\t”;
+}
+
+Int main()
+{
+    Int a[3][2] = {{1, -2}, {-3, 4}, {-5, 6}};
+    Print(a, 3, 2);
+    Cout << endl;
+    Print(a, 2, 2);
+    Return 0;
+}
+```
+
+Что делает:
+Функция print выводит n строк и m столбцов двумерного массива с фиксированным вторым размером (2).
