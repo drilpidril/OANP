@@ -1,0 +1,25 @@
+9.	Передача статического массива в функцию
+
+```cpp
+#include <iostream>
+Using namespace std;
+
+Void print (int mas[], int n)
+{
+    For (int i = 0; i < n; i++) cout << mas[i] << “\t”;
+    Cout << endl;
+}
+
+Int main()
+{
+    Int a[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+    Print(a, 10);
+    Cout << endl;
+    Print(a, 7);
+    Print(a, 13);
+    Return 0;
+}
+```
+
+Что делает:
+Функция print выводит первые n элементов массива. В main вызывается с разной размерностью (даже больше реальной — выход за границы, что опасно).
